@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Título da Página -->
+  <title>Pregunta</title>
+
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      font-family: 'Nunito', sans-serif;
+    }
+    body {
+      background-color: #000000;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+    }
+    .container {
+      width: 700px;
+      max-width: 90%;
+    }
+    .black {
+      background-color: #ffffff;
+      padding: 10px;
+      text-align: center;
+      border-radius: 20px;
+      box-shadow: 0 0 10px 2px;
+    }
+    .answer {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      gap: 10px;
+    }
+    @media (max-width: 991px) {
+      .answer {
+      display: grid;
+      grid-template-columns: repeat(1, auto);
+      gap: 10px;
+      }
+    }
+    .btn {
+      border-radius: 10px;
+      padding: 5px 10px;
+      font-size: 30px;
+      background-color: #FFA500;
+      outline: none;
+      text-decoration: none;
+      color: black;
+    }
+    .black h1 {
+      color: black;
+    }
+    .black p {
+      font-size: 18px;
+      color: black;
+    }
+    .hide {
+      display: none;
+    }
+  </style>
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '617883513201835');
+      fbq('init', '625847002247118');
+      fbq('init', '628206398903068');
+      fbq('init', '526020552899421');
+      fbq('init', '705595084656960');
+      fbq('init', '636931294480325');
+      fbq('track', 'AddToCart');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=617883513201835&ev=AddToCart&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+</head>
+<body> 
+  <div class="container">
+    <div class="black">
+      <div id="primeira">
+        <div class="question">
+          <h1>¡Presentación cargada con éxito!</h1>
+          <p>¿Quieres verlo ahora y descubrir el truco matutino de 2 minutos que todas están haciendo? Haz clic en el botón naranja</p>
+        </div>
+        <div class="answer">
+          <button class="btn" onclick="redirect()">SÍ</button>
+          <button class="btn" onclick="redirect()">NO</button>
+        </div>
+      </div>
+    </div>
+    <p style="text-align: center; font-weight: bold;">© 2023 – Todos los derechos reservados. Este sitio web no forma parte ni está respaldado por Facebook. Facebook es una marca comercial da Meta, Inc.</p>
+    <p style="text-align: center; font-weight: bold;"><a href="https://formulavientreplano.site/termos" style="color: black;">Términos de Uso</a> | <a href="https://formulavientreplano.site/privacidade" style="color: black;">Política de Privacidad</a></p>
+  </div>
+  <script>
+    function segunda() {
+      document.getElementById("primeira").classList.add("hide")
+    }
+    function redirect() {
+      location.href = "https://formulavientreplano.site/" // SEU LINK AQUI
+    }
+  </script>
+</body>
+</html>
